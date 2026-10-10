@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<div class="layout">
+    <img src="du.jpeg" alt="Kirk" class="imagem-esquerda">
+
+    <div class="triangulo">
+        <div class="texto">
+            <p>Edu</p>
+            <p>Quem foi Edu?</p>
+            <p>Edu é um dos melhores amigos <br> que eu já tive.</p>
+            <p>Sempre o amei e sempre o amarei.</p>
+            <p>independente de tudo que aconteceu EU te amo billzinho</p>
+            <form><input type="button" value="aperta eu :P" onclick="kkkk()"></form>          
+        </div>
+    </div>
+    <img src="dudd.jpeg" alt="Imagem direita" class="imagem-direita">
+</div>
+<script>
+    function kkkk() {
+        document.getElementById("mensagem").innerText =
+        "desculpa estar uma merda, faz tempo que nao to fazendo isso e nao aprendi muito mais eu juro que me esforcei te amo cara obrigada por estar aqui mesmo depois de tudo"
+        for (let i = 0; i < 20; i++) {
+            const coracao = document.createElement("span");
+
+            coracao.className = "coracao";
+            coracao.innerText = "❤️";
+            coracao.style.left = Math.random() * 100 + "vw";
+
+            document.body.appendChild(coracao);
+
+            coracao.addEventListener("animationend", () => {
+                coracao.remove();
+            });
+        }
+}
+
+</script>
+<p id="mensagem"></p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!---<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<div class="layout">
+    <img src="du.jpeg" alt="Kirk" class="imagem-esquerda">
+
+    <div class="triangulo">
+        <div class="texto">
+            <p>Edu</p>
+            <p>Quem foi Edu?</p>
+            <p>Edu é um dos melhores amigos <br> que eu já tive.</p>
+            <p>Sempre o amei e sempre o amarei.</p>
+            <p>independente de tudo que aconteceu EU te amo billzinho</p>
+            <form><input type="button" value="aperta eu :P" onclick="kkkk()"></form>
+        </div>
+    </div>
+
+    <img src="dudd.jpeg" alt="Imagem direita" class="imagem-direita">
+</div>
+<script>
+    function kkkk() {
+        if (confirm("tem certeza? :P kkkkk"))
+        alert("desculpa estar uma merda, faz tempo que nao to fazendo isso e nao aprendi muito mais eu juro que me esforcei te amo cara obrigada por estar aqui mesmo depois de tudo")
+    }
+
+</script>
+</body>
+</html>
