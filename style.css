@@ -1,0 +1,70 @@
+body{
+    background-image:url(https://imgs.search.brave.com/iDnwdm1oAVFiG0vmlrdM9C60WdQFNqHXnvW0MJsBcFs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDkxMTYx/NTUuanBn);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px auto;
+}
+
+.triangulo {
+    width: 350px;
+    height: 275px;
+    background-color: #805500;
+
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+
+    flex-shrink: 0;
+}
+
+.texto {
+    text-align: center;
+    padding-top: 65px;
+    font-size: 10px;
+}
+
+.layout img {
+    width: 180px;
+    height: auto;
+}
+
+
+.coracao {
+    position: fixed;
+    bottom: -30px;
+    font-size: 25px;
+    animation: subir 3s linear forwards;
+    pointer-events: none;
+}
+
+@keyframes subir {
+    to {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+#mensagem 
+{
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+    line-height: 1.6;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    overflow-wrap: break-word;
+    background-color: aliceblue;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input {
+    background-color: red;
+    border-style: solid ;
+}
